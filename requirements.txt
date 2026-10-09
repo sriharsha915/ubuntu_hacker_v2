@@ -1,0 +1,13 @@
+# Iterative Attack Loop — dependencies
+#
+# The ZERO-dependency path works with just the stdlib:
+#   --strategist rule  --driver http   (http driver still needs `requests`)
+#
+# Recommended full install (scripts/install.sh installs all of these):
+rich>=13.0          # pretty, tagged terminal rendering (falls back to ANSI)
+requests>=2.28      # the --driver http no-browser probe
+playwright>=1.40    # the --driver playwright REAL headed browser
+flask>=2.2          # the bundled intentionally-vulnerable demo target
+
+# Only needed for the automated AI brain (--strategist claude):
+anthropic>=0.40

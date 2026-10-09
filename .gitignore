@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+engagements/*/
+engagements/feedback/
+!engagements/.gitkeep
+.pytest_cache/
+*.png
